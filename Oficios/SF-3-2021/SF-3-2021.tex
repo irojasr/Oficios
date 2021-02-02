@@ -1,0 +1,129 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article}
+\usepackage{alltt}
+\usepackage[spanish]{babel}
+%\usepackage[extreme]{savetrees}
+\usepackage[
+   % showframe,
+    paper=letterpaper,
+    headheight=54.45pt,
+    bottom=1.2in
+]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr} % Required for custom headers
+\usepackage{graphicx}
+\usepackage{lastpage} % Required to determine the last page for the footer
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage[theoremfont,largesc,tighter,osf]{newpxtext}
+\usepackage{xcolor}
+
+%%%%%%%%% === Document Configuration === %%%%%%%%%%%%%%
+
+\pagestyle{fancy}
+\lhead{
+\includegraphics[width=0.2\textwidth]{../../Logos/FEUCR.pdf}
+} % Top left header
+\chead{} % Top center header
+\rhead{
+\includegraphics[clip, trim=1.3cm 16.3cm 11.85cm 0.5cm, width=0.07\textwidth]{../../Logos/SF.pdf}
+} % Top right header
+\lfoot{} % Bottom left footer
+\cfoot{Secretaría de Finanzas, FEUCR.\\
+        Ciudad Universitaria Rodrigo Facio,
+        costado oeste del comedor estudiantil.\\
+        {\bfseries Teléfono:} (506) 2511-4615\quad
+        {\bfseries E-mail:} \texttt{finanzas.feucr@ucr.ac.cr}
+       } % Bottom center footer
+\rfoot{P\'ag.\ \thepage\ de\ \pageref{LastPage}
+       } % Bottom right footer
+
+\renewcommand{\footrulewidth}{0.3pt}% default is 0pt
+\renewcommand{\headrulewidth}{0.3pt}% default is 0pt
+\def\baselinestretch{1.5}% Interlineado
+\setlength{\parindent}{0.09\linewidth}% Sangria
+
+\newskip\smallskipamount \smallskipamount=6pt plus 2pt minus 2pt
+\newskip\medskipamount   \medskipamount  =12pt plus 4pt minus 4pt
+\newskip\bigskipamount   \bigskipamount =18pt plus 6pt minus 6pt
+
+\newcommand{\MONTH}{%
+  \ifcase\the\month
+  \or enero% 1
+  \or febrero% 2
+  \or marzo% 3
+  \or abril% 4
+  \or mayo% 5
+  \or junio% 6
+  \or julio% 7
+  \or agosto% 8
+  \or septiembre% 9
+  \or octubre% 10
+  \or noviembre% 11
+  \or diciembre% 12
+  \fi}
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+
+\begin{flushright}
+  %\textcolor{white}{\textbf{CONSECUTIVO}}\\
+  SF-3-2021\\
+  \medskip
+  \the\day\ de \MONTH, \the\year
+\end{flushright}
+\medskip
+\begin{flushleft}\begin{spacing}{1}
+  \textbf{Srta. Kenya Porras Salas\\
+  Tesorería\\
+  Asociación de Estudiantes de Estudios Generales}
+\end{spacing}\end{flushleft}
+
+\noindent Estimada tesorera:\par
+
+Cordial saludo de mi parte.\par
+El procedimiento que busca realizar se conoce como \emph{solicitud de inclusión} al catálogo. Esta solicitud se puede realizar siempre y cuando responda a una necesidad de la entidad. Cabe resaltar que no se pueden pedir artículos por razones estéticas. El proceso para hacer esto consiste en:
+\begin{enumerate}
+    \item Encontrar el tipo de artículo deseado.
+    \item Recolectar información de dicho artículo tanto como se pueda. Esta información incluye, pero no se limita a: 
+    \begin{itemize}
+        \item Traer un previsto de las medidas del artículo, dónde se ubicará y el rango de tolerancia de dichas medidas.
+        \item El peso del artículo.
+        \item Si es un producto específico, agregar la marca del producto, quién lo fabrica.
+        \item Especificaciones sobre tipo de corriente con la que trabaja caso que sea un aparato electrónico.
+    \end{itemize}
+\end{enumerate}
+Tome en cuenta que esta solicitud de inclusión puede ser declinada por parte de OSUM y por tanto es mejor realizar el proceso caso que se requieran realizar correcciones. Le enfatizo nuevamente que estas solicitudes \textbf{sólo se tramitan cuando responden a una verdadera necesidad} que los artículos dentro del catálogo no pueden suplir.\par 
+Cualquier consulta o duda que tengan sobre las instrucciones aquí brindadas o sobre el proceso en general, pueden evacuarla escribiéndome ya sea por correo o por teléfono. Me despido y les deseo muchos éxitos en este nuevo periodo.\par
+Muy atentamente;\par
+\bigskip
+\bigskip
+\bigskip
+\begin{spacing}{1}
+\textit{\textbf{Jonathan Josué Carcache Ríos}}\par
+\textit{Coordinación}
+\textit{Secretaria de Finanzas}
+\end{spacing}
+\medskip
+\begin{flushleft}\begin{spacing}{1}
+ \scriptsize{CC. Archivo/JIRR.
+
+ }
+\end{spacing}\end{flushleft}
+%%%%%%%%%%%% Contents end %%%%%%%%%%%%%%%%
+%Indent whole paragrah: https://tex.stackexchange.com/questions/35933/indenting-a-whole-paragraph
+%Dates: https://tex.stackexchange.com/questions/185548/the-year-in-roman-and-the-month-in-text
+%SKIPS:https://tex.stackexchange.com/questions/41476/lengths-and-when-to-use-them/41488
+%SKIPS2: https://tex.stackexchange.com/questions/476/what-if-anything-is-the-advantage-of-bigskip-and-friends-over-vspace
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newpage
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{bibi}
+\end{document} 

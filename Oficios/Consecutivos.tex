@@ -1,0 +1,89 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article}
+\usepackage[spanish]{babel}
+\usepackage{booktabs}
+%\usepackage[extreme]{savetrees}
+\usepackage[
+   % showframe,
+    paper=letterpaper,
+    headheight=54.45pt,
+    bottom=1.2in
+]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr} % Required for custom headers
+\usepackage{graphicx}
+\usepackage{lastpage} % Required to determine the last page for the footer
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage[theoremfont,largesc,tighter,osf]{newpxtext}
+\usepackage{xcolor}
+
+%%%%%%%%% === Document Configuration === %%%%%%%%%%%%%%
+
+\pagestyle{fancy}
+\lhead{
+\includegraphics[width=0.2\textwidth]{../Logos/FEUCR.pdf}
+} % Top left header
+\chead{} % Top center header
+\rhead{
+\includegraphics[clip, trim=1.3cm 16.3cm 11.85cm 0.5cm, width=0.07\textwidth]{../Logos/SF.pdf}
+} % Top right header
+\lfoot{} % Bottom left footer
+\cfoot{Secretaría de Finanzas, FEUCR.\\
+        Ciudad Universitaria Rodrigo Facio,
+        costado oeste del comedor estudiantil.\\
+        {\bfseries Teléfono:} (506) 2511-4615\quad
+        {\bfseries E-mail:} \texttt{finanzas.feucr@ucr.ac.cr}
+       } % Bottom center footer
+\rfoot{P\'ag.\ \thepage\ de\ \pageref{LastPage}
+       } % Bottom right footer
+
+\renewcommand{\footrulewidth}{0.3pt}% default is 0pt
+\renewcommand{\headrulewidth}{0.3pt}% default is 0pt
+\def\baselinestretch{1.5}% Interlineado
+\setlength{\parindent}{0.09\linewidth}% Sangria
+
+\newskip\smallskipamount \smallskipamount=6pt plus 2pt minus 2pt
+\newskip\medskipamount   \medskipamount  =12pt plus 4pt minus 4pt
+\newskip\bigskipamount   \bigskipamount =18pt plus 6pt minus 6pt
+
+\newcommand{\MONTH}{%
+  \ifcase\the\month
+  \or enero% 1
+  \or febrero% 2
+  \or marzo% 3
+  \or abril% 4
+  \or mayo% 5
+  \or junio% 6
+  \or julio% 7
+  \or agosto% 8
+  \or septiembre% 9
+  \or octubre% 10
+  \or noviembre% 11
+  \or diciembre% 12
+  \fi}
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+\begin{document}    
+
+\begin{table}[]
+\centering
+\begin{tabular}{@{}llll@{}}
+\toprule
+Consecutivo & Autor & Fecha & Propósito \\ 
+\midrule
+      SF-1-2021      &JIRR     &20210109       &Apertura de tracto \\
+      SF-2-2021      &JIRR     &20210109       &Instrucciones tracto \\ 
+      SF-3-2021      &JIRR     &20210125       &Respuesta generales, GECO. \\ 
+      SF-4-2021      &JIRR     &20210126       &Informe facturas Paraíso. \\ 
+      SF-5-2021      &JIRR     &20210202       &Fecha de cierre compras activos. \\ 
+      \bottomrule
+\end{tabular}
+\end{table}
+
+\end{document} 

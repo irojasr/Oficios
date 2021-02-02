@@ -1,0 +1,134 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article}
+\usepackage{alltt}
+\usepackage[spanish]{babel}
+%\usepackage[extreme]{savetrees}
+\usepackage[
+   % showframe,
+    paper=letterpaper,
+    headheight=54.45pt,
+    bottom=1.2in
+]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr} % Required for custom headers
+\usepackage{graphicx}
+\usepackage{lastpage} % Required to determine the last page for the footer
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage[theoremfont,largesc,tighter,osf]{newpxtext}
+\usepackage{xcolor}
+
+%%%%%%%%% === Document Configuration === %%%%%%%%%%%%%%
+
+\pagestyle{fancy}
+\lhead{
+\includegraphics[width=0.2\textwidth]{../../Logos/FEUCR.pdf}
+} % Top left header
+\chead{} % Top center header
+\rhead{
+\includegraphics[clip, trim=1.3cm 16.3cm 11.85cm 0.5cm, width=0.07\textwidth]{../../Logos/SF.pdf}
+} % Top right header
+\lfoot{} % Bottom left footer
+\cfoot{Secretaría de Finanzas, FEUCR.\\
+        Ciudad Universitaria Rodrigo Facio,
+        costado oeste del comedor estudiantil.\\
+        {\bfseries Teléfono:} (506) 2511-4615\quad
+        {\bfseries E-mail:} \texttt{finanzas.feucr@ucr.ac.cr}
+       } % Bottom center footer
+\rfoot{P\'ag.\ \thepage\ de\ \pageref{LastPage}
+       } % Bottom right footer
+
+\renewcommand{\footrulewidth}{0.3pt}% default is 0pt
+\renewcommand{\headrulewidth}{0.3pt}% default is 0pt
+\def\baselinestretch{1.5}% Interlineado
+\setlength{\parindent}{0.09\linewidth}% Sangria
+
+\newskip\smallskipamount \smallskipamount=6pt plus 2pt minus 2pt
+\newskip\medskipamount   \medskipamount  =12pt plus 4pt minus 4pt
+\newskip\bigskipamount   \bigskipamount =18pt plus 6pt minus 6pt
+
+\newcommand{\MONTH}{%
+  \ifcase\the\month
+  \or enero% 1
+  \or febrero% 2
+  \or marzo% 3
+  \or abril% 4
+  \or mayo% 5
+  \or junio% 6
+  \or julio% 7
+  \or agosto% 8
+  \or septiembre% 9
+  \or octubre% 10
+  \or noviembre% 11
+  \or diciembre% 12
+  \fi}
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+
+\begin{flushright}
+  %\textcolor{white}{\textbf{CONSECUTIVO}}\\
+  SF-2-2021\\
+  \medskip
+  \the\day\ de \MONTH, \the\year
+\end{flushright}
+\medskip
+\begin{flushleft}\begin{spacing}{1}
+  \textbf{Tesorerías\\
+  Órganos Federativos\\
+  Federación de Estudiantes de la Universidad de Costa Rica}
+\end{spacing}\end{flushleft}
+
+\noindent Estimados tesoreros:\par
+
+Cordial saludo nuevamente.\par
+Reitero que a partir del \textbf{Sábado 9 de enero, 2021} se abre el periodo de ejecución del 2do tracto del presupuesto 2020-2021. Los órganos que sean \textbf{autorizados por la Contraloría Estudiantil} deben seguir las siguientes indicaciones:
+\begin{enumerate}
+  \item Deben presentar un plan operativo rellenando el documento Excel adjunto. Los planes se recibirán por medio del correo \texttt{finanzas.feucr@ucr.ac.cr}
+      con copia a la dirección \texttt{secretaria.finanzasfeucr@gmail.com}.
+  \item Junto con cada servicio que deseen contratar deben incluir una proforma que incluya la siguiente información:
+      \begin{itemize}
+        \item Nombre de la sociedad o del proveedor.
+        \item Número de cédula de identidad, o cédula jurídica, según corresponda.
+\item Número de cuenta IBAN, junto con el nombre del banco al que corresponde.
+\item Una breve descripción del servicio o desglose de gastos.
+      \end{itemize}
+  \item Los proveedores a contratar deben registrarse en el sitio web \texttt{geco.ucr.ac.cr} dentro de la pestaña de proveedores. Las instrucciones para registrarse se adjuntan en el documento correspondiente.
+  \item Para realizar pedidos de suministros deben incluir la cantidad deseada y los códigos de agrupación y de artículo. Tomen en cuenta que las cantidades y precios de suministros pueden variar. Al momento de hacer el pedido es posible que no se encuentre el artículo disponible o se haya encarecido.
+  \item Análogamente para la compra de activos, deben incluir la información de los bienes deseados dentro del plan operativo. Esta información incluye: el código de agrupación, el código de artículo y la cantidad.\par
+      Para consultar los bienes se debe ingresar al sitio \texttt{geco.ucr.ac.cr} y utilizar la opción ``Consulta Catálogo''. Es importante hacerles saber que los bienes clasificados \textbf{por demanda} son más sencillos de tramitar que los que no se encuentran en esta modalidad.
+\end{enumerate}
+Cualquier consulta o duda que tengan sobre las instrucciones aquí brindadas o sobre el proceso en general, pueden evacuarla escribiéndome ya sea por correo o por teléfono.\par
+Sin más y deseándoles éxito en este nuevo periodo, se despide cordialmente,\par
+\bigskip
+\bigskip
+\bigskip
+\begin{spacing}{1}
+\textit{\textbf{Jonathan Josué Carcache Ríos}}\par
+\textit{Coordinación}
+\textit{Secretaria de Finanzas}
+\end{spacing}
+\medskip
+\begin{flushleft}\begin{spacing}{1}
+ \scriptsize{CC. Archivo/JIRR\\
+ ADJ. Plantilla planes operativos.
+
+ }
+\end{spacing}\end{flushleft}
+%%%%%%%%%%%% Contents end %%%%%%%%%%%%%%%%
+%Indent whole paragrah: https://tex.stackexchange.com/questions/35933/indenting-a-whole-paragraph
+%Dates: https://tex.stackexchange.com/questions/185548/the-year-in-roman-and-the-month-in-text
+%SKIPS:https://tex.stackexchange.com/questions/41476/lengths-and-when-to-use-them/41488
+%SKIPS2: https://tex.stackexchange.com/questions/476/what-if-anything-is-the-advantage-of-bigskip-and-friends-over-vspace
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newpage
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{bibi}
+\end{document} 

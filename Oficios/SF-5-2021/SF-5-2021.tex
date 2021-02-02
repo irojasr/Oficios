@@ -1,0 +1,119 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article}
+\usepackage{alltt}
+\usepackage[spanish]{babel}
+%\usepackage[extreme]{savetrees}
+\usepackage[
+   % showframe,
+    paper=letterpaper,
+    headheight=54.45pt,
+    bottom=1.2in
+]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr} % Required for custom headers
+\usepackage{graphicx}
+\usepackage{lastpage} % Required to determine the last page for the footer
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage[theoremfont,largesc,tighter,osf]{newpxtext}
+\usepackage{xcolor}
+
+%%%%%%%%% === Document Configuration === %%%%%%%%%%%%%%
+
+\pagestyle{fancy}
+\lhead{
+\includegraphics[width=0.2\textwidth]{../../Logos/FEUCR.pdf}
+} % Top left header
+\chead{} % Top center header
+\rhead{
+\includegraphics[clip, trim=1.3cm 16.3cm 11.85cm 0.5cm, width=0.07\textwidth]{../../Logos/SF.pdf}
+} % Top right header
+\lfoot{} % Bottom left footer
+\cfoot{Secretaría de Finanzas, FEUCR.\\
+        Ciudad Universitaria Rodrigo Facio,
+        costado oeste del comedor estudiantil.\\
+        {\bfseries Teléfono:} (506) 2511-4615\quad
+        {\bfseries E-mail:} \texttt{finanzas.feucr@ucr.ac.cr}
+       } % Bottom center footer
+\rfoot{P\'ag.\ \thepage\ de\ \pageref{LastPage}
+       } % Bottom right footer
+
+\renewcommand{\footrulewidth}{0.3pt}% default is 0pt
+\renewcommand{\headrulewidth}{0.3pt}% default is 0pt
+\def\baselinestretch{1.5}% Interlineado
+\setlength{\parindent}{0.09\linewidth}% Sangria
+
+\newskip\smallskipamount \smallskipamount=6pt plus 2pt minus 2pt
+\newskip\medskipamount   \medskipamount  =12pt plus 4pt minus 4pt
+\newskip\bigskipamount   \bigskipamount =18pt plus 6pt minus 6pt
+
+\newcommand{\MONTH}{%
+  \ifcase\the\month
+  \or enero% 1
+  \or febrero% 2
+  \or marzo% 3
+  \or abril% 4
+  \or mayo% 5
+  \or junio% 6
+  \or julio% 7
+  \or agosto% 8
+  \or septiembre% 9
+  \or octubre% 10
+  \or noviembre% 11
+  \or diciembre% 12
+  \fi}
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+
+\begin{flushright}
+  %\textcolor{white}{\textbf{CONSECUTIVO}}\\
+  SF-2-2021\\
+  \medskip
+  \the\day\ de \MONTH, \the\year
+\end{flushright}
+\medskip
+\begin{flushleft}\begin{spacing}{1}
+  \textbf{Tesorerías\\
+  Órganos Federativos\\
+  Asociaciones Federadas\\
+  Federación de Estudiantes de la Universidad de Costa Rica}
+\end{spacing}\end{flushleft}
+
+\noindent Estimados tesoreros:\par
+
+Cordial saludo de mi parte.\par
+Respecto al proceso de solicitud de activos reitero un anuncio importante. El presupuesto destinado a la compra de activos corresponde con el total de activos de los tractos II-2021 y III-2021.  Agrego que la fecha límite para hacer solicitudes de compra de activos será el día \textbf{agregar fecha xdxd}.\par  
+Cualquier consulta o duda que tengan sobre las instrucciones aquí brindadas o sobre el proceso de compra de activos en general, pueden evacuarla escribiéndome ya sea por correo o por teléfono.\par
+Sin más les deseo mucho éxito en este nuevo mes, se despide cordialmente,\par
+\bigskip
+\bigskip
+\bigskip
+\begin{spacing}{1}
+\textit{\textbf{Jonathan Josué Carcache Ríos}}\par
+\textit{Coordinación}
+\textit{Secretaria de Finanzas}
+\end{spacing}
+\medskip
+\begin{flushleft}\begin{spacing}{1}
+ \scriptsize{CC. Archivo/JIRR
+
+ }
+\end{spacing}\end{flushleft}
+%%%%%%%%%%%% Contents end %%%%%%%%%%%%%%%%
+%Indent whole paragrah: https://tex.stackexchange.com/questions/35933/indenting-a-whole-paragraph
+%Dates: https://tex.stackexchange.com/questions/185548/the-year-in-roman-and-the-month-in-text
+%SKIPS:https://tex.stackexchange.com/questions/41476/lengths-and-when-to-use-them/41488
+%SKIPS2: https://tex.stackexchange.com/questions/476/what-if-anything-is-the-advantage-of-bigskip-and-friends-over-vspace
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newpage
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{bibi}
+\end{document} 
